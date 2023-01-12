@@ -1,4 +1,4 @@
-package com.ua.RD.homework2;
+package com.ua.RD.Homework2;
 
 
     public class Main {
