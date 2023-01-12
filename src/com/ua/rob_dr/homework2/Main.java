@@ -1,4 +1,4 @@
-package com.ua.rob_dr;
+package com.ua.rob_dr.homework2;
 
 
     public class Main {
