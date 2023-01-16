@@ -6,7 +6,7 @@ public class Main {
 
         /**
          * main method
-         *
+         * 
          */
 
         /*
@@ -49,7 +49,7 @@ public class Main {
         q /= 1;
         q *= 4;
         q %= 4;
-        
+
 
 
     }
