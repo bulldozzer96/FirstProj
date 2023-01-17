@@ -3,7 +3,6 @@ package com.ua.RD.lesson3;
 public class Main {
     public static void main(String[] args) {
 
-
         /**
          * main method
          *
@@ -49,8 +48,6 @@ public class Main {
         q /= 1;
         q *= 4;
         q %= 4;
-
-
 
     }
 }
