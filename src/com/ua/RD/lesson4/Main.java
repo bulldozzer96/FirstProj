@@ -43,8 +43,8 @@ public class Main {
 
         System.out.println(str.toLowerCase().indexOf("f"));//(наприклад модифікувати через lowercase)
 
-        System.out.println(str.indexOf("W")+" зліва направо");//зліва направо
-        System.out.println(str.lastIndexOf("W")+" зправа наліво");//зправа наліво
+        System.out.println(str.indexOf("W") + " зліва направо");//зліва направо
+        System.out.println(str.lastIndexOf("W") + " зправа наліво");//зправа наліво
 
 
         String fName = "sss eeffE";
@@ -76,8 +76,8 @@ public class Main {
         String ss2 = "Q";
         ss2 = "QW";
         ss2 = "Q";
-        ss2=ss2.toLowerCase();
-        ss2=ss2.toUpperCase();
+        ss2 = ss2.toLowerCase();
+        ss2 = ss2.toUpperCase();
 
         System.out.println(ss1.hashCode()); //81 -_-
         System.out.println(ss2.hashCode()); //81 Т_Т
