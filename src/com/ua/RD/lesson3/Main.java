@@ -3,10 +3,10 @@ package com.ua.RD.lesson3;
 public class Main {
     public static void main(String[] args) {
 
-        /**
-         * main method
-         *
-         */
+//        /**
+//         * main method
+//         *
+//         */
 
         /*
         multiline comment
@@ -34,20 +34,20 @@ public class Main {
 
         System.out.println(5 % 3); //залишок від ділення (якщо 0, то ділення відбувається без залишку)
 
-        int q = 1;
-    /*    q = q + 1;
-        q+=1000;
-        q++;
-        q--;*/
-
-    /*    System.out.println(++q);
-        System.out.println(q++);//постфіксна операція, інкрементація не відбувається після виводу "q"
-
-        System.out.println(q++ + ++q);*/
-
-        q /= 1;
-        q *= 4;
-        q %= 4;
+//        int q = 1;
+//    /*    q = q + 1;
+//        q+=1000;
+//        q++;
+//        q--;*/
+//
+//    /*    System.out.println(++q);
+//        System.out.println(q++);//постфіксна операція, інкрементація не відбувається після виводу "q"
+//
+//        System.out.println(q++ + ++q);*/
+//
+//        q /= 1;
+//        q *= 4;
+//        q %= 4;
 
     }
 }
