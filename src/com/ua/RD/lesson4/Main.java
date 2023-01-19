@@ -6,9 +6,8 @@ public class Main {
     public static void main(String[] args) {
         String str = "hello world";
         //String str = new String("hello world");
-
-        int a = 7;
-        a = 9;
+       // int a = 7;
+        //a = 9;
         str = "wW-wFW";
 
         System.out.println(str);
