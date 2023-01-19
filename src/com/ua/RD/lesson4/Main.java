@@ -1,5 +1,7 @@
 package com.ua.RD.lesson4;
 
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
         String str = "hello world";
@@ -7,7 +9,7 @@ public class Main {
 
         int a = 7;
         a = 9;
-        str = "wW--wFW";
+        str = "wW-wFW";
 
         System.out.println(str);
         System.out.println(str.length());
@@ -43,5 +45,26 @@ public class Main {
 
         System.out.println(str.indexOf("W")+" зліва направо");//зліва направо
         System.out.println(str.lastIndexOf("W")+" зправа наліво");//зправа наліво
+
+
+        String fName = "sss eeffE";
+        String CorrectfName = "Sss Eeffe"; //продумати реалізацію самостійно
+
+
+        System.out.println(Arrays.toString(fName.split(" ")));
+
+        String ss1 = "Q";
+        String ss2 = "Q";
+        ss2 = "QW";
+        ss2 = "Q";
+        ss2=ss2.toLowerCase();
+        ss2=ss2.toUpperCase();
+
+        System.out.println(ss1.hashCode()); //81 -_-
+        System.out.println(ss2.hashCode()); //81 Т_Т
+
+        System.out.println(ss1==ss2); //не можна робити з класами, стрінг зберігається і в HEAP і в Thread Stack, тільки для примітивів
+
+        System.out.println(ss1.equals(ss2));
     }
 }
