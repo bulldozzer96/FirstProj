@@ -50,6 +50,25 @@ public class Main {
         String fName = "sss eeffE";
         String CorrectfName = "Sss Eeffe"; //продумати реалізацію самостійно
 
+       /* public class Main {
+            public static void main(String[] args) {
+
+                String s1 = "joHn sMith", s2 = "";
+                s2 = s2 + s1.substring(0, 1).toUpperCase();
+
+                s1 = s1.toLowerCase();
+                for (int i = 1; i < s1.length(); i++) {
+                    if (" ".equals(s1.substring(i-1, i)))
+                        s2 = s2 + s1.substring(i, i+1).toUpperCase();
+                    else
+                        s2 = s2 + s1.substring(i, i+1);
+                }
+                System.out.println(s2);
+
+            }
+        }
+*/
+
 
         System.out.println(Arrays.toString(fName.split(" ")));
 
@@ -63,8 +82,14 @@ public class Main {
         System.out.println(ss1.hashCode()); //81 -_-
         System.out.println(ss2.hashCode()); //81 Т_Т
 
-        System.out.println(ss1==ss2); //не можна робити з класами, стрінг зберігається і в HEAP і в Thread Stack, тільки для примітивів
+        /*System.out.println(ss1==ss2);
+        не можна робити з класами, стрінг зберігається і в HEAP і в Thread Stack, тільки для примітивів*/
 
         System.out.println(ss1.equals(ss2));
+
+
+        String ss3 = "   dsdds sdfdf  ";
+        System.out.println(ss3);
+        System.out.println(ss3.trim()); //аналогічно СЖПРОБЕЛ
     }
 }
