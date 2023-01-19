@@ -3,11 +3,11 @@ package com.ua.RD.lesson4;
 public class Main {
     public static void main(String[] args) {
         String str = "hello world";
-        //String str = new String("hello wrold");
+        //String str = new String("hello world");
 
         int a = 7;
         a = 9;
-        str = "wW--wW";
+        str = "wW--wFW";
 
         System.out.println(str);
         System.out.println(str.length());
@@ -35,9 +35,13 @@ public class Main {
 
         System.out.println(str.substring(3));
 
-        System.out.println(str.substring(str.indexOf("-")));
+        System.out.println(str.substring(str.indexOf("-"))); //індексОФ використовує за врахуванням регістру
         System.out.println(str.substring(2, 4));
 
 
+        System.out.println(str.toLowerCase().indexOf("f"));//(наприклад модифікувати через lowercase)
+
+        System.out.println(str.indexOf("W")+" зліва направо");//зліва направо
+        System.out.println(str.lastIndexOf("W")+" зправа наліво");//зправа наліво
     }
 }
