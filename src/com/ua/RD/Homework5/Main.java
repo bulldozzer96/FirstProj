@@ -2,25 +2,51 @@ package com.ua.RD.Homework5;
 
 public class Main {
     public static void main(String[] args) {
-        int a = 10;
-        int b = 12;
 
-        boolean aGreaterPair = a > b && a != b && a % 2 == 0;
-        boolean bGreaterPair = a < b && a != b&& b % 2 == 0;
-        boolean aGreaterNonPair = a > b && a != b && a % 2 != 0;
-        boolean bGreaterNonPair = a < b && a != b&& b % 2 != 0;
+        int a = 18;
+        int b = 18;
 
+        int greater, fewest;
 
-        if (aGreaterPair) {
-            System.out.println("A is pair and greater than B");
-        } else if (bGreaterPair) {
-            System.out.println("B is pair greater than A");
-        } else if (aGreaterNonPair){
-            System.out.println("A is`t pair and greater than B");
-        } else if (bGreaterNonPair){
-            System.out.println("B is`t pair and greater than A");
-        }else
-            System.out.println("They are equal");
+        boolean Greater = a > b;
+        boolean Fewest = a < b;
+        boolean evenBoth = (a % 2 == 0 && b % 2 == 0);
+        boolean oddBoth = (a % 2 != 0 && b % 2 != 0);
+
+        if (Greater) {
+            greater = a;
+            fewest = b;
+            System.out.println("Greater: " + greater);
+            System.out.println("Fewest: " + fewest);
+        } else if (Fewest) {
+            greater = b;
+            fewest = a;
+            System.out.println("Greater: " + greater);
+            System.out.println("Fewest: " + fewest);
+        } else {
+            System.out.println("They are both equal: " + a);
+        }
+        if (evenBoth) {
+            System.out.println("Both numbers is even");
+        } else if (oddBoth) {
+            System.out.println("Both numbers is odd");
+
+        } else if (a % 2 == 0 && b % 2 != 0) {
+            System.out.println("Even number is: " + a);
+            System.out.println("Odd number is: " + b);
+
+        } else {
+            System.out.println("Even number is: " + b);
+            System.out.println("Odd number is: " + a);
+        }
     }
 }
-//   System.out.println("They are equal");
+
+
+
+
+
+
+
+
+
