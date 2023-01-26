@@ -21,8 +21,9 @@ public class Homework6 {
         int b = 7;
         for (int a = 1; a <= b; a++) {
             res *= a;
-            System.out.print(res + " ");
+           // System.out.print(res + " "); //для виведення в ряд
         }
+        System.out.print(res + " "); //для виведення підсумком
         System.out.println();
         //------------- ряд Фібоначчі <100
 
