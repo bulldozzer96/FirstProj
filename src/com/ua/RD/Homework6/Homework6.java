@@ -16,12 +16,11 @@ public class Homework6 {
             }
         }
         System.out.println();
-        //------------- !7
+        //------------- !7 виведено у ряд
         int res = 1;
         int b = 7;
         for (int a = 1; a <= b; a++) {
             res *= a;
-
             System.out.print(res + " ");
         }
         System.out.println();
