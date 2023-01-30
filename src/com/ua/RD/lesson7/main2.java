@@ -8,8 +8,9 @@ public class main2 {
         //коли викликається getMaxNumb - а і б зліва направво, через кому. Типи повинні співпадати.
         //String.valueOf() не приймається
         //static тільки в static
-        int firstNumber = 30;
-        int secondNumber = 30;
+        //намагатися максимально уникати static в методах.
+        int firstNumber = 9;
+        int secondNumber = 11;
 //        String s = "";
 //        byte b = 5;
 //
@@ -27,17 +28,18 @@ public class main2 {
         var b = 4;
         printType(b);
         int fact = getFactorial(7);
-        int fact2 = Factorial(7);
+        int fact2 = Factorial(10);
         System.out.println(fact);
         System.out.println(fact2);
     }
+
+
 
 
     //рекурсія
     static int Factorial(int n) {
         if (n == 0) {
             return 1;
-
         } else {
             return n * Factorial(n - 1);
         }
