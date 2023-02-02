@@ -19,7 +19,7 @@ public class main2 {
 //        printMaxNumber(firstNumber, secondNumber);
 //        someWork();
 //        printSymbolNumberTimes(10);
-//        printSymbolNumberTimes(20, "x");
+        printSymbolNumberTimes(20, "x");
 
 //        printType(4);
 //        int a = 4;
@@ -32,8 +32,6 @@ public class main2 {
         System.out.println(fact);
         System.out.println(fact2);
     }
-
-
 
 
     //рекурсія
@@ -73,7 +71,7 @@ public class main2 {
     }
 
     static void printSymbolNumberTimes(int number) {
-        printSymbolNumberTimes(number, "*");
+        printSymbolNumberTimes(number, "[[");
     }
 
     static void printSymbolNumberTimes(int number, String symbol) {
