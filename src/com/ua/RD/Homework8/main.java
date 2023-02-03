@@ -6,13 +6,17 @@ public class main {
     public static void main(String[] args) {
         int length = 5;
         int[] arr = new int[length];
-        int maxValue = 100; //умовно обмежив максимальне значення
-        fillArr(arr, maxValue);
+        int maxValue = 100; //обмежив максимальне значення від 0 до 100
+        fillArray(arr, maxValue);
+        Min(arr);
+        Max(arr);
+
         printArray(arr);
-        getMin(arr);
-        getMax(arr);
-        System.out.println(getMin(arr));
-        System.out.println(getMax(arr));
+        System.out.println(Min(arr));
+        System.out.println(Max(arr));
+        System.out.println(Average(arr));
+        System.out.println(Sum(arr));
+
 
     }
 
@@ -24,14 +28,14 @@ public class main {
         System.out.println();
     }
 
-    static void fillArr(int[] arr, int maxValue) {
+    static void fillArray(int[] arr, int maxValue) {
         Random random = new Random();
         for (int i = 0; i < arr.length; i++) {
             arr[i] = random.nextInt(maxValue);
         }
     }
 
-    static int getMin(int[] arr) {
+    static int Min(int[] arr) {
         int temp;
         for (int i = 0; i < arr.length; i++) {
             for (int j = i + 1; j < arr.length; j++) {
@@ -46,7 +50,7 @@ public class main {
 
     }
 
-    static int getMax(int[] arr) {
+    static int Max(int[] arr) {
         int temp;
         for (int i = 0; i < arr.length; i++) {
             for (int j = i + 1; j < arr.length; j++) {
@@ -57,8 +61,24 @@ public class main {
                 }
             }
         }
-        return arr[arr.length-1];
+        return arr[arr.length - 1];
 
+    }
+
+    static double Average(int[] arr) { //ср.знач через double, задля виводу повноцінного результату ділення
+        double result = 1;
+        for (double j : arr) {
+            result += j;
+        }
+        return (result - 1) / (arr.length);
+    }
+
+    static int Sum(int[] arr) { // сума значень масиву
+        int result = 1;
+        for (int j : arr) {
+            result += j;
+        }
+        return (result - 1);
     }
 
 
