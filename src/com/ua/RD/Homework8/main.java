@@ -11,11 +11,11 @@ public class main {
         Min(arr);
         Max(arr);
 
-        printArray(arr);
-        System.out.println(Min(arr));
-        System.out.println(Max(arr));
-        System.out.println(Average(arr));
-        System.out.println(Sum(arr));
+        printArray(arr);                    // 1,2
+        System.out.println(Min(arr));       // 3
+        System.out.println(Max(arr));       // 4
+        System.out.println(Average(arr));   // 5
+        System.out.println(Sum(arr));       // 6
 
 
     }
