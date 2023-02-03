@@ -4,7 +4,7 @@ import java.util.Random;
 
 public class main {
     public static void main(String[] args) {
-        int length = 5;
+        int length = 10;
         int[] arr = new int[length];
         int maxValue = 100; //обмежив максимальне значення від 0 до 100
         fillArray(arr, maxValue);
@@ -66,19 +66,19 @@ public class main {
     }
 
     static double Average(int[] arr) { //ср.знач через double, задля виводу повноцінного результату ділення
-        double result = 1;
+        double result = 0;
         for (double j : arr) {
             result += j;
         }
-        return (result - 1) / (arr.length);
+        return (result) / (arr.length);
     }
 
     static int Sum(int[] arr) { // сума значень масиву
-        int result = 1;
+        int result = 0;
         for (int j : arr) {
             result += j;
         }
-        return (result - 1);
+        return (result);
     }
 
 
