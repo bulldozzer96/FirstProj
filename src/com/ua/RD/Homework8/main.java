@@ -67,7 +67,7 @@ public class main {
 
     static double Average(int[] arr) { //ср.знач через double, задля виводу повноцінного результату ділення
         double result = 0;
-        for (double j : arr) {
+        for (int j : arr) {
             result += j;
         }
         return (result) / (arr.length);
