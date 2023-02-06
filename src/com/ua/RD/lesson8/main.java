@@ -6,11 +6,11 @@ public class main {
     public static void main(String[] args) {
         Random random = new Random(20);//випадкові числа
         Random randomL = new Random(8);//випадкові числа
-        int length = randomL.nextInt(10);
+        int length = randomL.nextInt(11);
         int[] arr = new int[length];
 
 
-        fillArrayWithNumbVoid(arr, 20);
+        fillArrayWithNumbVoid(arr, 11);
         //arr = getArrayWithNumbInt(arr, 3);
 
         //
