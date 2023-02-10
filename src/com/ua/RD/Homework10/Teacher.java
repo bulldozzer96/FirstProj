@@ -4,30 +4,28 @@ public class Teacher {
     private String name;
     private String subject;
     private String degree;
-    private int tAge;
+    private int age;
 
     public Teacher(){
 
-        System.out.println("base");
     }
 
     public Teacher(String name, String subject) {
         this.name = name;
         this.subject = subject;
-
     }
 
-    public Teacher(String name, String subject, String degree) {
+    public Teacher(String name, String subject,  int age) {
+        this.name = name;
+        this.subject = subject;
+        this.age = age;
+
+    }
+    public Teacher(String name, String subject, String degree,  int age) {
         this.name = name;
         this.subject = subject;
         this.degree = degree;
-
-    }
-    public Teacher(String name, String subject, String degree, int tAge) {
-        this.name = name;
-        this.subject = subject;
-        this.degree = degree;
-        this.tAge = tAge;
+        this.age = age;
     }
 
     public String getName() {
@@ -55,11 +53,11 @@ public class Teacher {
     }
 
     public int getTAge() {
-        return tAge;
+        return age;
     }
 
-    public void settAge(int tAge) {
-        this.tAge = tAge;
+    public void setAge(int age) {
+        this.age = age;
     }
 
     @Override
@@ -68,7 +66,7 @@ public class Teacher {
                 "name='" + name + '\'' +
                 ", subject='" + subject + '\'' +
                 ", degree='" + degree + '\'' +
-                ", tAge=" + tAge +
+                ", age=" + age +
                 '}';
     }
 }
