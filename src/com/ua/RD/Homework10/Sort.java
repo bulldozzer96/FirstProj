@@ -23,16 +23,20 @@ public class Sort {
         descending(arr);
 
 
+
+
+
+
     }
 
-    public void fill(int length, int[] arr, int maxValue) {
+     void fill(int length, int[] arr, int maxValue) {
         Random random = new Random();
         for (int i = 0; i < arr.length; i++) {
             arr[i] = random.nextInt(maxValue);
         }
     }
 
-    public void ascending(int[] arr) {
+     void ascending(int[] arr) {
         int temp;
         for (int i = 0; i < arr.length; i++) {
 
@@ -47,7 +51,7 @@ public class Sort {
 
     }
 
-    public void descending(int[] arr) {
+     void descending(int[] arr) {
         int temp;
         for (int i = 0; i < arr.length; i++) {
 
@@ -87,12 +91,7 @@ public class Sort {
         this.maxValue = maxValue;
     }
 
-
-    @Override
     public String toString() {
-
-        return Arrays.toString(arr);
-
-
+        return  Arrays.toString(arr);
     }
 }

@@ -2,12 +2,12 @@ package com.ua.RD.Homework10;
 
 public class Student {
     private String name;
-    private String course;
+    private int course;
     private int age;
     private int score;
 
 
-    public Student(String name, String course, int age, int score) {
+    public Student(String name, int course, int age, int score) {
         this.name = name;
         this.course = course;
         this.age = age;
@@ -22,11 +22,11 @@ public class Student {
         this.name = name;
     }
 
-    public String getCourse() {
+    public int getCourse() {
         return course;
     }
 
-    public void setCourse(String course) {
+    public void setCourse(int course) {
         this.course = course;
     }
 

@@ -12,8 +12,8 @@ public class Main {
         System.out.println(phys);
         System.out.println(economy);
         System.out.println(math);
-        Student bob = new Student("Bill", "Bachelor 1-st course", 18, 94);
-        System.out.println(bob.getScore());
+        Student bob = new Student("Bob", 1, 18, 94);
+        System.out.println(bob.getName()+"`s score is "+bob.getScore());
 
 
         int length = 10;
