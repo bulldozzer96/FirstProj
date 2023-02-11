@@ -1,42 +1,44 @@
 package com.ua.RD.Homework10;
 
 
-import java.util.Arrays;
-
 import java.util.Random;
 
-public class Sort {
+public class ArraySort {
     private int length;
     private int[] arr;
     private int maxValue;
 
 
-    public Sort(int length, int[] arr, int maxValue) {
+    public ArraySort(int length, int[] arr, int maxValue) {
 
         this.length = length;
         this.arr = arr;
         this.maxValue = maxValue;
-        this.ascending(arr);
-        this.descending(arr);
+
         fill(length, arr, maxValue);
+        // printArray(arr);
+
+
         ascending(arr);
         descending(arr);
 
-
-
-
-
-
     }
 
-     void fill(int length, int[] arr, int maxValue) {
+    void printArray(int[] arr) {
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i] + " ");
+        }
+        System.out.println();
+    }
+
+    void fill(int length, int[] arr, int maxValue) {
         Random random = new Random();
         for (int i = 0; i < arr.length; i++) {
             arr[i] = random.nextInt(maxValue);
         }
     }
 
-     void ascending(int[] arr) {
+    void ascending(int[] arr) {
         int temp;
         for (int i = 0; i < arr.length; i++) {
 
@@ -48,10 +50,11 @@ public class Sort {
                 }
             }
         }
+        printArray(arr);
 
     }
 
-     void descending(int[] arr) {
+    void descending(int[] arr) {
         int temp;
         for (int i = 0; i < arr.length; i++) {
 
@@ -63,7 +66,7 @@ public class Sort {
                 }
             }
         }
-
+        printArray(arr);
     }
 
     public int getLength() {
@@ -91,7 +94,5 @@ public class Sort {
         this.maxValue = maxValue;
     }
 
-    public String toString() {
-        return  Arrays.toString(arr);
-    }
+
 }

@@ -6,7 +6,7 @@ public class Teacher {
     private String degree;
     private int age;
 
-    public Teacher(){
+    public Teacher() {
 
     }
 
@@ -15,13 +15,14 @@ public class Teacher {
         this.subject = subject;
     }
 
-    public Teacher(String name, String subject,  int age) {
+    public Teacher(String name, String subject, int age) {
         this.name = name;
         this.subject = subject;
         this.age = age;
 
     }
-    public Teacher(String name, String subject, String degree,  int age) {
+
+    public Teacher(String name, String subject, String degree, int age) {
         this.name = name;
         this.subject = subject;
         this.degree = degree;
@@ -62,11 +63,10 @@ public class Teacher {
 
     @Override
     public String toString() {
-        return "Teacher{" +
-                "name='" + name + '\'' +
-                ", subject='" + subject + '\'' +
+        return "Teacher`s " +
+                "subject='" + subject + '\'' +
+                ", name='" + name + '\'' +
                 ", degree='" + degree + '\'' +
-                ", age=" + age +
-                '}';
+                ", age=" + age;
     }
 }

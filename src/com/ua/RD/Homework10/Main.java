@@ -1,7 +1,5 @@
 package com.ua.RD.Homework10;
 
-import java.util.Arrays;
-import java.util.Random;
 
 public class Main {
     public static void main(String[] args) {
@@ -13,22 +11,13 @@ public class Main {
         System.out.println(economy);
         System.out.println(math);
         Student bob = new Student("Bob", 1, 18, 94);
-        System.out.println(bob.getName()+"`s score is "+bob.getScore());
-
+        System.out.println(bob.getName() + "`s score is " + bob.getScore());
 
         int length = 10;
         int[] arr = new int[length];
         int maxValue = 100;
 
-
-        Sort sort = new Sort(length, arr, maxValue);
-
-        System.out.println(sort);
+        ArraySort arraySort = new ArraySort(length, arr, maxValue);
 
     }
-
-
-
-
-
 }
