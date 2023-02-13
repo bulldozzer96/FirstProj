@@ -1,7 +1,7 @@
-package com.ua.RD.lesson10;
+package com.ua.RD.lesson10.part1;
 
 
-import com.ua.RD.lesson10.service.PaintService;
+import com.ua.RD.lesson10.part1.service.PaintService;
 
 public class Main {
     public static void main(String[] args) {
