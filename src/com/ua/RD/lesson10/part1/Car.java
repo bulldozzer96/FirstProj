@@ -1,4 +1,4 @@
-package com.ua.RD.lesson10;
+package com.ua.RD.lesson10.part1;
 
 public class Car {
 
