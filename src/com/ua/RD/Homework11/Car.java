@@ -11,7 +11,9 @@ public class Car {
 public Car (String type,String brand){
 
 }
+public void drive (){
 
+}
 
     public String getType() {
         return type;

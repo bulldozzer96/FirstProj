@@ -14,6 +14,13 @@ public class Light extends Car {
         this.engine = engine;
     }
 
+
+    @Override
+    public void drive() {
+        super.drive();
+        System.out.println("Drive civil car");
+    }
+
     public String getColor() {
         return color;
     }

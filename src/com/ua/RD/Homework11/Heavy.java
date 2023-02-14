@@ -14,6 +14,10 @@ public class Heavy extends Car {
         this.purpose = purpose;
     }
 
+    public void drive() {
+        super.drive();
+        System.out.println("Drive cargo car");
+    }
     public String getCapacity() {
         return capacity;
     }
