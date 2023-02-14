@@ -13,7 +13,6 @@ public class Main {
         civil.drive();
 
 
-
         Heavy cargo = new Heavy("", "", "", "");
         cargo.setType("Truck");
         cargo.setBrand("VOLVO");

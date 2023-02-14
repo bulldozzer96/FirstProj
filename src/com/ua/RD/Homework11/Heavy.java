@@ -18,6 +18,7 @@ public class Heavy extends Car {
         super.drive();
         System.out.println("Drive cargo car");
     }
+
     public String getCapacity() {
         return capacity;
     }

@@ -4,16 +4,17 @@ public class Car {
     protected String type;
     protected String brand;
 
-    public Car (){
+    public Car() {
 
     }
 
-public Car (String type,String brand){
+    public Car(String type, String brand) {
 
-}
-public void drive (){
+    }
 
-}
+    public void drive() {
+
+    }
 
     public String getType() {
         return type;

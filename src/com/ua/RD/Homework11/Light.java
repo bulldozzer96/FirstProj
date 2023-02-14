@@ -1,7 +1,6 @@
 package com.ua.RD.Homework11;
 
 public class Light extends Car {
-    //    private String ;
     protected String color;
     protected String engine;
 
