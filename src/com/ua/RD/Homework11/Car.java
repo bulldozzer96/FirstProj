@@ -5,7 +5,7 @@ public class Car {
     protected String brand;
 
     public Car() {
-
+        System.out.println();
     }
 
     public Car(String type, String brand) {

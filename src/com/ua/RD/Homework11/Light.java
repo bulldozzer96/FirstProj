@@ -17,7 +17,7 @@ public class Light extends Car {
     @Override
     public void drive() {
         super.drive();
-        System.out.println("Drive civil car");
+        System.out.println("Drive "+getType());
     }
 
     public String getColor() {
