@@ -3,7 +3,6 @@ package com.ua.RD.lesson10.part3;
 public class Parent {
 
 
-
     static {
         System.out.println("Parent static-1");
     }
