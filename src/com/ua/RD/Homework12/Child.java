@@ -4,9 +4,11 @@ public class Child extends Parent {
     static {
         System.out.println("2");
     }
+
     static {
         System.out.println("3");
     }
+
     static {
         System.out.println("4");
     }

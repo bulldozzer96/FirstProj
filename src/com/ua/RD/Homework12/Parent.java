@@ -6,6 +6,7 @@ public class Parent {
     static {
         System.out.println("1");
     }
+
     {
         System.out.println("5");
     }
