@@ -1,7 +1,5 @@
-package com.ua.RD.practice_since_17java_only.repository;
-
-import com.ua.RD.practice_since_17java_only.domain.Employee;
-
+package com.ua.RD.lesson16.practice.repository;
+import com.ua.RD.lesson16.practice.domain.Employee;
 import java.util.Random;
 
 public class EmployeeMemoryRepository {
