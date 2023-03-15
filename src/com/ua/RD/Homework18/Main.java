@@ -17,7 +17,7 @@ public class Main {
         System.out.print(decimalList);
         System.out.println();
 
-        List<Integer> millionList = new ArrayList<>();
+        List<Integer> millionList = new LinkedList<>();
         for (int i = 0; i < 2_000_000; i++) {
             millionList.add(i);
         }
