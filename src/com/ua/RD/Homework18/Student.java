@@ -8,9 +8,9 @@ public class Student {
     int age;
 
     public Student(String name, String surname, int age) {
-        this.firstName = name;
-        this.secondName = surname;
-        this.age = age;
+        this.firstName = Student.studentFirstName();
+        this.secondName = Student.studentSecondName();
+        this.age = Student.studentAge();
     }
 
     public static String studentFirstName() {
