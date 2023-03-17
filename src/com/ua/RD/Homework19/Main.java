@@ -12,7 +12,7 @@ public class Main {
         Set<Integer> ts = new TreeSet<>();
 
         for (int i = 0; i < 1000; i++) {
-            int randomNumb = random.nextInt(0, 50) + 1;
+            int randomNumb = random.nextInt(1, 51);
             hs.add(randomNumb);
             lhs.add(randomNumb);
             ts.add(randomNumb);
