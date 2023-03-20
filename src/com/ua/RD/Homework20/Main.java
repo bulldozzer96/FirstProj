@@ -25,9 +25,7 @@ public class Main {
         dictionary.put("монітор", List.of("in english: monitor", "auf deutsch: monitor", "モニター"));
         dictionary.put("двері", List.of("in english: door", "auf deutsch: tür", "ドア"));
 
-
-        System.out.println(dictionary.get("рушниця"));
-        System.out.println("ドア");
+        System.out.println(dictionary.get(fromInput));
 
     }
 }
