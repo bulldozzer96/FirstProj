@@ -12,7 +12,6 @@ public class Main {
         System.out.print("Enter a word to translate \nin lower case: ");
         String fromInput = scanner.next();
 
-
         Map<String, List<String>> dictionary = new HashMap<>();
         dictionary.put("рушниця", List.of("in english: rifle", "auf deutsch: gewehr", "日本語で: 銃"));
         dictionary.put("паляниця", List.of("in english: loaf", "auf deutsch: laib", "日本語で: パン"));
