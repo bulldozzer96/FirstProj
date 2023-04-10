@@ -1,4 +1,4 @@
-package com.ua.RD.Homework24;
+package com.ua.RD.Homework25;
 
 import java.util.*;
 

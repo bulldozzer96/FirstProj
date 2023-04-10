@@ -1,4 +1,4 @@
-package com.ua.RD.Homewrok14;
+package com.ua.RD.Homework14;
 
 public class Main {
     public static void main(String[] args) {
