@@ -20,7 +20,7 @@ public class Main {
     public static int squaredNumber(int i) throws OwnException {
         int result;
         if (i < 0) {
-            throw new OwnException("Negative can`t be number");
+            throw new OwnException("Number can`t be negative");
         }
         result = i * i;
         return result;
