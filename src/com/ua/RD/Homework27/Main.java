@@ -8,11 +8,11 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter smth: ");
-        String number = scanner.next();
+        String txt = scanner.next();
 
         try (OutputStream os = new FileOutputStream("Homework27.txt");
              ObjectOutputStream oos = new ObjectOutputStream(os)) {
-            oos.writeObject(number);
+            oos.writeObject(txt);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
