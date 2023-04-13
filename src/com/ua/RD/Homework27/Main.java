@@ -7,8 +7,8 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter a number: ");
-        int number = scanner.nextInt();
+        System.out.print("Enter smth: ");
+        String number = scanner.next();
 
         try (OutputStream os = new FileOutputStream("Homework27.txt");
              ObjectOutputStream oos = new ObjectOutputStream(os)) {
@@ -18,7 +18,7 @@ public class Main {
         }
         try (InputStream is = new FileInputStream("Homework27.txt");
              ObjectInputStream ois = new ObjectInputStream(is)) {
-            System.out.println("Entered number is: " + ois.readObject());
+            System.out.println("Y`ve entered: " + ois.readObject());
 
         } catch (IOException | ClassNotFoundException e) {
             throw new RuntimeException(e);
