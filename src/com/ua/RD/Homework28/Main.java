@@ -16,7 +16,7 @@ public class Main {
 
         Files.createFile(Path.of("Homework28.txt"));
 
-        Files.write(Path.of("Homework28.txt"), txt.getBytes());
+        Files.write(Path.of("Homework28.txt"), txt.toString().getBytes());
 
         var output = Files.readAllLines(Path.of("Homework28.txt"));
 
