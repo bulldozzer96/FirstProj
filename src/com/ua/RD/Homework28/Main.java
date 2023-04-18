@@ -18,9 +18,9 @@ public class Main {
 
         Files.write(Path.of("Homework28.txt"), txt.getBytes());
 
-        var inputList = Files.readAllLines(Path.of("Homework28.txt"));
+        var output = Files.readAllLines(Path.of("Homework28.txt"));
 
-        System.out.println("Y`ve entered: " + inputList);
+        System.out.println("Y`ve entered: " + output);
 
     }
 
