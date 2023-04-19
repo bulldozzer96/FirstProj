@@ -1,7 +1,6 @@
 package com.ua.RD.work;
 
-//import com.ua.RD.lesson20.Language;
-//import com.ua.RD.lesson20.Word;
+
 import com.ua.RD.work.domain.Employee;
 import com.ua.RD.work.domain.EmploymentType;
 import com.ua.RD.work.service.EmployeeService;
