@@ -16,7 +16,8 @@ public class Main {
         try {
             Files.write(Path.of("Homework28.txt"), txt.getBytes());
         } catch (IOException e) {
-            Files.createFile(Path.of("Homework28.txt"));
+            e.printStackTrace();
+//            Files.createFile(Path.of("Homework28.txt"));
         }
 
         var output = Files.readAllLines(Path.of("Homework28.txt"));
