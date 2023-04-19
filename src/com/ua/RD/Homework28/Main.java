@@ -9,14 +9,15 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-        Files.deleteIfExists(Path.of("Homework28.txt"));
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter smth: ");
         String txt = scanner.next();
 
-        Files.createFile(Path.of("Homework28.txt"));
-
-        Files.write(Path.of("Homework28.txt"), txt.toString().getBytes());
+        try {
+            Files.write(Path.of("Homework28.txt"), txt.getBytes());
+        } catch (IOException e) {
+            Files.createFile(Path.of("Homework28.txt"));
+        }
 
         var output = Files.readAllLines(Path.of("Homework28.txt"));
 
