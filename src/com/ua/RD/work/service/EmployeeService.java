@@ -2,6 +2,7 @@ package com.ua.RD.work.service;
 
 //import com.ua.RD.lesson14.A;
 import com.ua.RD.work.domain.Employee;
+import com.ua.RD.work.repository.EmployeeFileSerializationRepository;
 import com.ua.RD.work.repository.EmployeeMemoryRepository;
 import com.ua.RD.work.repository.EmployeeRepository;
 
@@ -15,7 +16,7 @@ public class EmployeeService {
     private final EmployeeRepository employeeRepository;
 
     public EmployeeService() {
-        employeeRepository = new EmployeeMemoryRepository();
+        employeeRepository = new EmployeeFileSerializationRepository();
     }
 
     public void printEmployees() {

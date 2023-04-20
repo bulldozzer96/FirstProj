@@ -16,33 +16,38 @@ import java.util.*;
 public class Main {
 
     public static void main(String[] args) {
-        TaxesService pe3TaxesService = new PeThirdGroupTaxesService();
-        TaxesService generalTaxesService = new GeneralTaxesService();
-        TaxesService[] taxesServices = {pe3TaxesService, generalTaxesService};
+//        TaxesService pe3TaxesService = new PeThirdGroupTaxesService();
+//        TaxesService generalTaxesService = new GeneralTaxesService();
+//        TaxesService[] taxesServices = {pe3TaxesService, generalTaxesService};
 
 
         EmployeeService employeeService = new EmployeeService();
+        employeeService.save(new Employee(1, "Ivan", "Ivanov", 25, 100000, EmploymentType.GENERAL));
         employeeService.printEmployees();
-        Employee employeeWithMaxSalary = employeeService.findEmployeeWithMaxSalary();
-        System.out.println();
-        System.out.println("Employee with max salary: ");
-        employeeService.printEmployee(employeeWithMaxSalary);
-        Employee employeeWithMinSalary = employeeService.findEmployeeWithMinSalary();
-        System.out.println();
-        System.out.println("Employee with min salary: ");
-        employeeService.printEmployee(employeeWithMinSalary);
-        System.out.println();
 
-        List<Employee> employees = employeeService.findAll();
-        for (TaxesService taxesService : taxesServices) {
-            System.out.println("Taxes - " + taxesService.getClass().getSimpleName() + ": " + taxesService.calculateTaxes(employees));
-        }
+//        Employee employeeWithMaxSalary = employeeService.findEmployeeWithMaxSalary();
+//        System.out.println();
+//        System.out.println("Employee with max salary: ");
+//        employeeService.printEmployee(employeeWithMaxSalary);
+//        Employee employeeWithMinSalary = employeeService.findEmployeeWithMinSalary();
+//        System.out.println();
+//        System.out.println("Employee with min salary: ");
+//        employeeService.printEmployee(employeeWithMinSalary);
+//        System.out.println();
+//
+//        List<Employee> employees = employeeService.findAll();
+//        for (TaxesService taxesService : taxesServices) {
+//            System.out.println("Taxes - " + taxesService.getClass().getSimpleName() + ": " + taxesService.calculateTaxes(employees));
+//        }
+//
+//        List<Employee> employeesWithGeneralSystem = employeeService.findEmployeesByType(EmploymentType.GENERAL);
+//        List<Employee> employeesWithPeSystem = employeeService.findEmployeesByType(EmploymentType.PE);
+//
+//        System.out.println("General taxes: " + generalTaxesService.calculateTaxes(employeesWithGeneralSystem));
+//        System.out.println("Pe third group taxes: " + pe3TaxesService.calculateTaxes(employeesWithPeSystem));
 
-        List<Employee> employeesWithGeneralSystem = employeeService.findEmployeesByType(EmploymentType.GENERAL);
-        List<Employee> employeesWithPeSystem = employeeService.findEmployeesByType(EmploymentType.PE);
 
-        System.out.println("General taxes: " + generalTaxesService.calculateTaxes(employeesWithGeneralSystem));
-        System.out.println("Pe third group taxes: " + pe3TaxesService.calculateTaxes(employeesWithPeSystem));
+
 
 
 //        Instant instant = Instant.now();

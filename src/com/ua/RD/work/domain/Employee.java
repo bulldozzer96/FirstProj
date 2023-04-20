@@ -1,9 +1,13 @@
 package com.ua.RD.work.domain;
 
+import java.io.Serial;
+import java.io.Serializable;
 import java.time.LocalDate;
 
-public class Employee extends Human {
+public class Employee implements Serializable {
 
+    @Serial
+    private static final long serialVersionUID = 2215718934031624639L;
     private int id;
     private String firstName;
     private String lastName;
@@ -32,11 +36,6 @@ public class Employee extends Human {
         this.age = age;
         this.salary = salary;
         this.type = type;
-    }
-
-    @Override
-    public void hello() {
-        System.out.println("cmvncmvncmvncvc");
     }
 
     public int getId() {
@@ -99,3 +98,4 @@ public class Employee extends Human {
                 '}';
     }
 }
+
