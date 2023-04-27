@@ -8,5 +8,6 @@ public class Main {
 
         thread0.start();
         thread1.start();
+
     }
 }
