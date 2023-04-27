@@ -5,12 +5,9 @@ public class ThreadWork implements Runnable {
         try {
             for (int i = 1; i < 11; i++) {
                 System.out.println("Result of " + Thread.currentThread().getName() + " is " + i);
-
             }
         } catch (RuntimeException e) {
             e.printStackTrace();
         }
     }
-
-
 }
