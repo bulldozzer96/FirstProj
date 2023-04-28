@@ -9,7 +9,7 @@ public class Main {
         Thread t = new Thread(() -> {
             int number;
             do {
-                number = new Random().nextInt(1, 10);
+                number = new Random().nextInt(1, 11);
                 System.out.println(Thread.currentThread().getName()+" generated " + number);
             } while (number != 5);
 
