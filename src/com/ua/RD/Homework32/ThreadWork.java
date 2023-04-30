@@ -1,5 +1,6 @@
 package com.ua.RD.Homework32;
 
+
 public class ThreadWork implements Runnable {
     public void run() {
         try {
