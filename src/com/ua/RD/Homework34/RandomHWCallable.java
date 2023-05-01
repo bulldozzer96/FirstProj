@@ -3,13 +3,13 @@ package com.ua.RD.Homework34;
 import java.util.Random;
 import java.util.concurrent.Callable;
 
-public class RandomHWCallable implements Callable<Integer> {
+public class RandomHWCallable implements Callable<String> {
 
     @Override
-    public Integer call() throws Exception {
+    public String call() throws Exception {
         int generateNumber = new Random().nextInt(1, 51);
 
-        return /*Thread.currentThread().getName() + " " +*/ generateNumber;
+        return Thread.currentThread().getName() + " " + generateNumber;
     }
 
 
