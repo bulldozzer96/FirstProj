@@ -7,16 +7,16 @@ import java.util.concurrent.*;
 
 public class Main {
     public static void main(String[] args) throws InterruptedException, ExecutionException {
-        List<Callable<Integer>> callableBaseList = new ArrayList<>();
+        List<Callable<Integer>> callableList = new ArrayList<>();
         ExecutorService executorService = Executors.newFixedThreadPool(10);
 
         for (int i = 0; i < new Random().nextInt(10, 100); i++) {
-            callableBaseList.add(new RandomHWCallable());
+            callableList.add(new RandomHWCallable());
         }
 
-        List<Future<Integer>> callableOutputList = executorService.invokeAll(callableBaseList);
+        List<Future<Integer>> futuresList = executorService.invokeAll(callableList);
 
-        for (Future<Integer> future : callableOutputList) {
+        for (Future<Integer> future : futuresList) {
             System.out.println(future.get());
         }
 
